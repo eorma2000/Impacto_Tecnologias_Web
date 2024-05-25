@@ -1,0 +1,421 @@
+/* CSS existente */
+body, h1, h2, h3, p, ul, li, img, video, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    color: #333;
+    margin: 20px;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#nav-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#nav-links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav-links ul li a:hover {
+    color: #ffcc00;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+section, article, aside {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #4b04ff41;
+    box-shadow: 0 0 10px rgba(237, 6, 6, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #fdfdfd;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+#business {
+    margin-bottom: 20px;
+}
+
+#business h2 {
+    margin-bottom: 10px;
+    color: #333; /* Color del texto */
+    font-size: 24px;
+}
+#nav-comercio ul {
+    list-style-type: disc; /* Añade los puntos */
+    padding-left: 20px; /* Ajusta el padding para los puntos */
+    text-align: left; /* Alinea la lista a la izquierda */
+}
+
+#nav-comercio ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav-comercio ul li a:hover {
+    color: #002fff;
+}
+
+.business-content {
+    display: flex;
+}
+
+.business-image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centrar la imagen horizontalmente */
+    align-items: center; /* Centrar la imagen verticalmente */
+}
+
+.business-image img {
+    width: 100%;
+    max-width: 300px; /* Tamaño máximo de la imagen */
+    height: auto;
+    object-fit: cover; /* Asegurar que la imagen cubra el área definida */
+}
+
+.business-text {
+    flex: 2;
+    padding-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.business-text p {
+    color: #333; /* Color del texto */
+    font-size: 16px;
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+/* Estilos para la sección de contacto */
+#contact {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #003366b2; /* Color de fondo */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.057);
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: #ffffff; /* Color del texto */
+    font-size: 24px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-bottom: 5px;
+    color: #ffffff; /* Color del texto de las etiquetas */
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact textarea {
+    resize: vertical; /* Permitir redimensionamiento vertical */
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #fbff00; /* Color de fondo del botón */
+    color: rgb(0, 0, 0); /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Transición suave al pasar el cursor */
+}
+
+#contact button:hover {
+    background-color: #0056b3; /* Cambio de color de fondo al pasar el cursor */
+}
+
+
+caption {
+    caption-side: top;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+footer form label {
+    margin: 10px 0 5px;
+    width: 100%;
+    text-align: left;
+}
+
+footer form input, footer form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer form button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #003366;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+footer form button:hover {
+    background-color: #e6b800;
+}
+
+.banner {
+    background: url('images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: slidein 5s infinite;
+}
+
+@keyframes slidein {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+.testimonials {
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #003366;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centrar el carrusel */
+    overflow: hidden; /* Ocultar contenido fuera del área visible */
+    position: relative; /* Posicionamiento relativo para botones de navegación */
+}
+
+.carousel-images {
+    display: flex; /* Mostrar las imágenes en línea */
+    transition: transform 0.5s ease; /* Transición suave para cambiar de imagen */
+}
+
+.carousel-images img {
+    width: 100%; /* Ajustar tamaño de las imágenes al contenedor */
+    height: auto; /* Mantener relación de aspecto */
+}
+
+.carousel-description {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para la descripción */
+    position: absolute; /* Posición absoluta para superponer la descripción */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px; /* Espaciado interno */
+}
+
+.carousel-description p {
+    color: white; /* Color del texto */
+    margin: 0; /* Eliminar margen predeterminado */
+}
+
+.carousel-buttons {
+    position: absolute; /* Posición absoluta para botones de navegación */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre los botones */
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para botones */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer;
+}
+
+/* Estilos para el botón "prev" */
+#prev {
+    border-top-left-radius: 5px; /* Añadir esquinas redondeadas */
+    border-bottom-left-radius: 5px;
+}
+
+/* Estilos para el botón "next" */
+#next {
+    border-top-right-radius: 5px; /* Añadir esquinas redondeadas */
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #nav-links ul {
+        display: none;
+        flex-direction: column;
+        background-color: #003366;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+
+    #nav-links ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    .carousel-description {
+        font-size: 0.9em;
+    }
+
+    footer form label, footer form input, footer form textarea {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .carousel-buttons button {
+        padding: 5px;
+    }
+}
