@@ -49,3 +49,36 @@ const navLinks = document.getElementById('nav-links');
 menuIcon.addEventListener('click', () => {
     navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita el envío del formulario
+
+        // Captura los datos del formulario
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+        const fileInput = document.getElementById("file");
+        const file = fileInput.files[0] ? fileInput.files[0].name : "No se adjuntó archivo";
+
+        // Aquí puedes agregar el código para enviar los datos a un servidor si es necesario
+        // Por ejemplo, usando fetch() para enviar los datos a una API
+
+        // Muestra el mensaje de alerta
+        alert(`Mensaje enviado correctamente. 
+Gracias por contactarnos, ${name}!
+
+Detalles:
+- Correo Electrónico: ${email}
+- Teléfono: ${phone}
+- Asunto: ${subject}
+- Mensaje: ${message}
+- Archivo: ${file}`);
+
+        // Resetea el formulario
+        form.reset();
+    });
+});
